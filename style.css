@@ -1,0 +1,372 @@
+
+/* Background */
+
+.background {
+    background-size: cover;
+    margin: 0;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+@media only screen and (max-width: 100px) {
+    .background {
+        margin-top: 50px;
+    }
+}
+
+
+/* Navbar toggle */
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    
+}
+
+.navbar-collapse {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Navbar */
+
+
+.logo {
+    position: fixed;
+    width: 80px;
+    height: 65px;
+    margin-left: 170px;
+    padding: px 0px 0px 00px;
+    top: 12px;
+    left: 20px;
+}
+
+
+.navbar-div {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    opacity: 60%;
+    width: 100%;
+    height: 85px;
+
+}
+
+
+.nav {
+    float: right;
+    font-size: 15px;
+    color: white;
+}
+
+.nav ul {
+    margin-right: 100px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    margin: 30px 50px 0 0;
+    font-family: 'Montserrat',
+        sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+li a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* Navbar and nav toogle media queries */
+
+@media only screen and (min-width: 1000px) {
+    .navbar {
+        visibility: hidden;
+    }
+}
+
+nav li {
+    margin: 30px 10px 0 0;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-div {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    nav li {
+        margin: 30px 20px 0 0;
+        font-size: 15px;
+    }
+}
+
+
+/* Section 2 Cards */
+
+
+
+.card1 {
+    height: 300px;
+    margin: 0;
+    display: inline-block;
+    margin: 15px 0 50px 0;
+}
+
+.card1:hover {
+    height: 305px;
+    margin-bottom: 0;
+
+    box-shadow: 3px 3px 1px #ccc;
+    -moz-box-shadow: 3px 3px 1px #ccc;
+    -webkit-box-shadow: 3px 3px 1px #ccc;
+    -khtml-box-shadow: 3px 3px 1px #ccc;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .card1 {
+        height: 200px;
+        margin: 0;
+        display: inline-block;
+        margin: 30px 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card1:hover {
+        height: 220px;
+        ;
+        margin: 0;
+        box-shadow: 3px 3px 1px #ccc;
+        -moz-box-shadow: 3px 3px 1px #ccc;
+        -webkit-box-shadow: 3px 3px 1px #ccc;
+        -khtml-box-shadow: 3px 3px 1px #ccc;
+    }
+}
+
+/* Dostava */
+
+.dostava {
+    margin: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+}
+
+
+
+/* Section 4 - Cashback */
+
+.coll {
+    display: flex;
+    background-color: rgb(218, 218, 218);
+    padding: 30px 170px;
+}
+
+.cb-heading {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 50px;
+    margin: 30px 0 0 0;
+}
+
+
+.cb-p {
+    float: left;
+    font-size: 20px;
+    font-family: 'Montserrat bold',
+        sans-serif;
+}
+
+.cashback-photo {
+    width: 500px;
+    padding: 10px 0 10px 60px
+}
+
+.cbbtn{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cb-heading {
+        margin: 0;
+        text-align: left;
+    }
+
+    .coll {
+        flex-direction: column-reverse;
+        margin: 0;
+        text-align: left;
+        padding: 100px 70px;
+    }
+
+    .cashback-photo {
+        width: 400px;
+        padding: 10px 0 10px 0px
+    }
+}
+
+
+
+
+/* Section 4 - Social Media */
+
+.social-media {
+    margin: 40px 0 0 0;
+}
+
+.social-icons {
+    margin: 20px auto;
+    list-style: none;
+
+}
+
+.list {
+    display: inline-block;
+    margin: auto 20px;
+}
+
+.social-img {
+    height: 40px;
+    margin: 10px;
+}
+
+.social-img:hover {
+    height: 45px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+/* footer */
+
+hr {
+    margin: 0px 50px 0 50px;
+    border-top: 0.5px solid grey;
+}
+
+.margintop{
+    margin-top: 20px;
+}
+
+footer {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/* KONTAKT PAGE --------------------------------------------------------*/
+
+
+
+/* map */
+
+.kontakt-heading{
+    margin-left: 145px;
+}
+
+form{
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+#gmap_canvas {
+    margin-top: 30px;
+   max-width: 100%;
+}
+
+
+.card {
+    position: absolute;
+    left: 1070px;
+    top: 1005px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        position: static;
+        margin: auto;
+
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .card {
+        position: absolute;
+        left: 1370px;
+        top: 1135px;
+
+    }
+}
+
+
+
+
+/* ZA NAS PAGE--------------------------------------------------------- */
+
+.coll-za-nas {
+    display: flex;
+    padding: 30px 170px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cb-heading {
+        margin: 0;
+        text-align: left;
+    }
+
+    .coll-za-nas {
+        flex-direction: column-reverse;
+        margin: 0;
+        text-align: left;
+        padding: 100px 70px;
+    }
+
+    .cashback-photo {
+        width: 400px;
+        padding: 10px 0 10px 0px
+    }
+}
+
+
+
+/* OSIGURUVANJE PAGE -------------------------------------------------------- */
+
+.osiguruvanje{
+    
+    padding: 30px 170px;
+}
