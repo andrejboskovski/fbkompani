@@ -155,7 +155,7 @@ nav li {
 
 @media only screen and (max-width: 1024px) {
     .card1 {
-        height: 200px;
+        height: 150px;
         margin: 0;
         display: inline-block;
         margin: 30px 0 20px 0;
@@ -164,7 +164,7 @@ nav li {
 
 @media only screen and (max-width: 1024px) {
     .card1:hover {
-        height: 220px;
+        height: 160px;
         ;
         margin: 0;
         box-shadow: 3px 3px 1px #ccc;
@@ -172,6 +172,7 @@ nav li {
         -webkit-box-shadow: 3px 3px 1px #ccc;
         -khtml-box-shadow: 3px 3px 1px #ccc;
     }
+
 }
 
 /* Dostava */
@@ -219,10 +220,10 @@ nav li {
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 850px) {
-    .cb-heading {
-        margin: 0;
-        text-align: left;
+@media only screen and (max-width: 736px) {
+   
+    .cb-heading{
+        text-align: center;
     }
 
     .coll {
@@ -230,11 +231,18 @@ nav li {
         margin: 0;
         text-align: left;
         padding: 100px 70px;
+        max-width: 100%;
+    }
+
+    .cbbtn{
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .cashback-photo {
-        width: 400px;
-        padding: 10px 0 10px 0px
+       
+        padding: 10px 0 10px 0px;
+        max-width: 100%;
     }
 }
 
@@ -245,13 +253,14 @@ nav li {
 
 .social-media {
     margin: 40px 0 0 0;
+    align-items: center;
 }
 
 .social-icons {
     margin: 20px auto;
     list-style: none;
-
 }
+
 
 .list {
     display: inline-block;
@@ -340,6 +349,11 @@ form{
         margin: auto;
 
     }
+
+    .kontakt-heading{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
 }
 
 
@@ -368,7 +382,8 @@ form{
     .cb-heading {
         margin: auto;
         text-align: left;
-        font-size: 45px;
+        font-size: 30px;
+
     }
 
     .coll-za-nas {
@@ -401,5 +416,9 @@ form{
         margin: 0;
         text-align: left;
         padding: 20px 70px;
+    }
+
+    .os-heading {
+        font-size: 35px;
     }
 }
