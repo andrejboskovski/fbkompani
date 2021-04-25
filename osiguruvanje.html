@@ -40,8 +40,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Почетна<span
-                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="index.html">Почетна<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="za nas.html">За нас</a>
 
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -61,13 +60,12 @@
 
     <!-- Navbar -->
 
-    <a href="index.html"><img src="./style/images/FBcompany logo original.png" alt="logo"
-                        class="logo"></a>
+    <a href="index.html"><img src="./style/images/FBcompany logo original.png" alt="logo" class="logo"></a>
 
     <div class="navbar-div">
         <nav class="nav">
             <ul>
-                
+
                 <li><a href="index.html">ПОЧЕТНА</a></li>
                 <li><a href="za nas.html">ЗА НАС</a></li>
 
@@ -97,11 +95,13 @@
     <div class="osiguruvanje">
         <h1 class="os-heading">ОСИГУРУВАЊЕ</h1>
 
-        <br>
-        <hr>
-        <br>
+
 
         <div id="vozila">
+
+            <hr>
+            <br>
+           
 
             <h5>ОСИГУРУВАЊЕ НА ВОЗИЛА</h5>
 
@@ -153,15 +153,20 @@
                     <li>Осигурување на патници во јавен превоз</li>
                     <li>Дополнително осигурување на возачот и патниците од незгода</li>
                 </ul>
-                <br>
-                <hr>
-                <br>
+
 
         </div>
 
         <div id="imot">
 
+            <hr>
+            <br>
+             <br>
+            <br>
+            <br>
+
             <h5>ОСИГУРУВАЊЕ НА ИМОТ</h5>
+
 
             <p><strong> Домакинското осигурување </strong>покрива најголем дел од ризиците кои се однесуваат на
                 градежниот
@@ -185,11 +190,16 @@
                 вградени инсталации и останатата вградена механичка опрема. Покрај недвижниот имот можете да го
                 осигурите и
                 имотот што се наоѓа во објектот и е сопственост на осигуреникот (лични предмети и покуќнина).</p <br>
-            <hr>
-            <br>
+
         </div>
 
         <div id="lica">
+
+            <hr>
+            <br>
+             <br>
+            <br>
+            <br>
 
             <h5>ОСИГУРУВАЊЕ НА ЛИЦА</h5>
 
@@ -279,13 +289,13 @@
 
 
 
- <div class="social-media">
+    <div class="social-media">
         <center>
             <h3>Заследете не!</h3>
         </center>
     </div>
 
- <div class="social-icons">
+    <div class="social-icons">
         <center>
             <ul>
                 <li class="list"><a href=""></a><img class="social-img" src="./style/images/social icons/instagram.png"
@@ -310,7 +320,30 @@
         </center>
     </footer>
 
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
 
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="1618305578414182">
+      </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
