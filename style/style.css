@@ -3,6 +3,15 @@ html{
     overflow-x: hidden;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
 
 
 /* Background */
@@ -11,151 +20,39 @@ html{
     background-size: cover;
     margin: 0;
     max-width: 100%;
-    background-repeat: no-repeat;
-    
 }
 
-
-
-
-
-
-
-
-/* Navbar toggle
-
-/* header{
-    justify-content: space-around;
+@media only screen and (max-width: 800px) {
+    .background {
+        display: none;
+    }
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 3;
-    
-    
-    
+.background-phone{
+background-size: cover;
+margin: 0;
+max-width: 100%;
 }
 
-.navbar-collapse {
-    background-color: rgb(255, 255, 255);
+@media only screen and (min-width: 800px) {
+    .background-phone {
+        display: none;
+    }
 }
-
 
 /* Navbar */
 
-
-/* .logo {
-    position: fixed;
-    width: 80px;
-    height: 65px;
-    margin-left: 170px;
-    padding: px 0px 0px 00px;
-    top: 12px;
-    left: 20px;
-    z-index: 10;
-    
+.navbutton{
+     position: absolute;
+     top: 22px;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 14px;
+     
 }
 
-@media only screen and (max-width: 1000px) {
-    .logo {
-        visibility: hidden;
-    }
-}
-
-
-
-.navbar-div {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    opacity: 60%;
-    width: 100%;
-    height: 85px;
-    z-index: 3;
-    
-}
-
-.navbar-div.scrolled {
-    background-color: black;
-    opacity: 90%;
-    transition: background-color 200ms linear;
-}
-
-.nav {
-    float: right;
-    font-size: 15px;
-    color: white;
-    
-}
-
-.nav ul {
-    margin-right: 100px;
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    color: white;
-    font-family: 'Montserrat',
-        sans-serif;
-
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-
-li a:hover {
-    color: grey;
-    text-decoration: none;
-} */ 
-
-/* Navbar and nav toogle media queries */
-
-/* @media only screen and (min-width: 1000px) {
-    .navbar {
-        visibility: hidden;
-    }
-}
-
-nav li {
-    margin: 30px 10px 0 0;
-    font-size: 13px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .navbar-div {
-        visibility: hidden;
-    }
-} */
- 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Navbar */
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-a:hover{
-    color: lightblue;
-    text-decoration: none;
+.navbuttonphone{
+    margin-top: 20%;
 }
 
 header {
@@ -180,7 +77,7 @@ header {
 @media only screen and (max-width: 800px) {
     .logo {
         width: 60px;
-        margin-top: 6px;
+        margin: 10px 0;
     }
 }
 
@@ -307,7 +204,7 @@ li:nth-child(5) {
 
 
 .toggle {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 40%;
@@ -405,82 +302,6 @@ li:nth-child(5) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Section 2 Cards */
 
 
@@ -534,7 +355,7 @@ li:nth-child(5) {
         sans-serif;
     background-color: black;
     color: white;
-    padding: 15px 0;
+    padding: 15px 20px;
 }
 
 
@@ -564,7 +385,7 @@ li:nth-child(5) {
 }
 
 .cashback-photo {
-    width: 500px;
+    width: auto;
     padding: 10px 0 10px 60px
 }
 
@@ -572,30 +393,35 @@ li:nth-child(5) {
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 900px) {
    
-    .cb-heading{
-        text-align: center;
-    }
-
     .coll {
         flex-direction: column-reverse;
         margin: 0;
-        text-align: left;
-        padding: 100px 70px;
+        text-align: center;
+        padding: 30px 30px;
         max-width: 100%;
     }
 
     .cbbtn{
-        margin-left: 0;
-        margin-top: 10px;
+        margin-left: 5px;  
+        margin-top: 10px; 
     }
 
     .cashback-photo {
-       
-        padding: 10px 0 10px 0px;
+        margin-bottom: 20px;
         max-width: 100%;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         
+
     }
+
+     .cb-heading {
+        margin: 20px auto;
+     }
+     
 }
 
 
@@ -616,7 +442,7 @@ li:nth-child(5) {
 
 .list {
     display: inline-block;
-    margin: 10px 50px 0px 0;
+    margin: 10px 35px 0px 0;
 }
 
 .social-img {
@@ -688,7 +514,7 @@ form{
 
 .card {
     position: absolute;
-    left: 1070px;
+    left: 70%;
     top: 1050px;
 
 }
@@ -696,7 +522,7 @@ form{
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     .card {
         position: static;
         margin: auto;
@@ -728,26 +554,26 @@ form{
 
 .coll-za-nas {
     display: flex;
-    padding: 30px 170px;
+    padding: 30px 15%;   
 }
 
-@media only screen and (max-width: 850px) {
-    .cb-heading {
-        margin: auto;
-        text-align: left;
+@media only screen and (max-width: 900px) {
+    .cb-heading-zanas {
+        text-align: center;
         font-size: 30px;
+    }
 
+    .cb-p{
+        text-align: center;
     }
 
     .coll-za-nas {
-        flex-direction: column-reverse;
-        margin: auto;
-        text-align: left;
-        padding: 10px 70px;
+        flex-direction: column;
+        padding: 30px 30px;
     }
 
     .cashback-photo {
-        width: 360px;
+        width: 100%;
         padding: 10px 0 10px 0px
     }
 }
@@ -762,16 +588,16 @@ form{
 }
 
 #vozila{
-    padding-top: 90px;
+    padding-top: 30px;
 }
 
 #imot{
-    padding-top: 90px;
+    padding-top: 30px;
 }
 
 
 #lica {
-    padding-top: 90px;
+    padding-top: 30px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -780,7 +606,8 @@ form{
         
         margin: 0;
         text-align: left;
-        padding: 20px 70px;
+        padding: 30px 30px 0px 30px;
+        text-align: center;
     }
 
     .os-heading {
