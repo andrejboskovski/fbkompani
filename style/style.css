@@ -1,4 +1,9 @@
 
+html{
+    overflow-x: hidden;
+}
+
+
 
 /* Background */
 
@@ -10,19 +15,18 @@
     
 }
 
-@media only screen and (max-width: 736px) {
-    .background {
-        margin-top: 60px;
-    }
+
+
+
+
+
+
+
+/* Navbar toggle
+
+/* header{
+    justify-content: space-around;
 }
-
-
-
-
-
-
-/* Navbar toggle */
-
 
 .navbar {
     position: fixed;
@@ -30,6 +34,8 @@
     width: 100%;
     height: 70px;
     z-index: 3;
+    
+    
     
 }
 
@@ -41,7 +47,7 @@
 /* Navbar */
 
 
-.logo {
+/* .logo {
     position: fixed;
     width: 80px;
     height: 65px;
@@ -69,11 +75,12 @@
     width: 100%;
     height: 85px;
     z-index: 3;
+    
 }
 
 .navbar-div.scrolled {
     background-color: black;
-    opacity: 100%;
+    opacity: 90%;
     transition: background-color 200ms linear;
 }
 
@@ -81,6 +88,7 @@
     float: right;
     font-size: 15px;
     color: white;
+    
 }
 
 .nav ul {
@@ -91,7 +99,6 @@ nav li {
     list-style: none;
     display: inline-block;
     color: white;
-    margin: 30px 50px 0 0;
     font-family: 'Montserrat',
         sans-serif;
 
@@ -106,11 +113,11 @@ a {
 li a:hover {
     color: grey;
     text-decoration: none;
-}
+} */ 
 
 /* Navbar and nav toogle media queries */
 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
     .navbar {
         visibility: hidden;
     }
@@ -125,7 +132,351 @@ nav li {
     .navbar-div {
         visibility: hidden;
     }
+} */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+a{
+    color: white;
+    text-decoration: none;
 }
+
+a:hover{
+    color: lightblue;
+    text-decoration: none;
+}
+
+header {
+    top: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+}
+
+.logo {
+    margin: 10px 0;
+    width: 70px;
+    float: left;
+    display: flex;
+    z-index: 10;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 60px;
+        margin-top: 6px;
+    }
+}
+
+.navbar-whole {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    padding: 0 15%;
+    z-index: 3;
+    background-image: url(./images/black-opacity60.png);
+    
+}
+
+
+.navbar-whole.scrolled {
+    background-image: url(./images/black-opacity90.png);
+    transition: background-image 200ms linear;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1em;
+    flex-grow: 1;
+    padding-top: 30px;
+    
+
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.a{
+    color: white;
+}
+
+.menu {
+    color: white;
+    font-family: montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+}
+
+.a:hover {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+
+}
+
+li:nth-child(5) {
+    margin-left: auto;
+
+}
+
+/* Nav Toggle icon */
+
+.toggle-icon {
+
+    position: absolute;
+    left: 80%;
+    padding-top: 15px;
+    cursor: pointer;
+    z-index: 100;
+    
+
+}
+
+.toggle-icon-click {
+    float: right;
+    padding-top: 25px;
+    cursor: pointer;
+    color: red;
+}
+
+@media only screen and (min-width: 900px) {
+    .toggle-icon {
+        display: none;
+    }
+}
+
+
+
+.line1 {
+    height: 3px;
+    width: 25px;
+    background-color:white;
+    margin-top: 5px;
+    
+
+}
+
+.line2 {
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-top: 5px;
+    
+}
+
+.line3 {
+    height: 3px;
+    width: 15px;
+    background-color:  white;
+    margin-top: 5px;
+    
+    
+}
+
+
+/* Toggle */
+
+
+
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    opacity: 95%;
+    z-index: 110;
+
+    transform: translate(100%, 0);
+    transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.toggle-click {
+
+    transform: translate(0%, 0);
+    transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+/* Toggle icon inside */
+
+.toggle-icon-inside {
+    position: absolute;
+    float: right;
+    right: 21%;
+    cursor: pointer;
+}
+
+.line1inside {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-top: 30px;
+}
+
+
+.line3inside {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: 30px;
+
+}
+
+
+
+.navbar-links-toggle {
+
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+}
+
+.a-toggle {
+    color: white;
+}
+
+.a-toggle:hover{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.menu-toggle-whole1 {
+    margin-top: 90px;
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -205,6 +556,7 @@ nav li {
 
 
 .cb-p {
+    padding-right: 30px;
     float: left;
     font-size: 20px;
     font-family: 'Montserrat bold',
@@ -409,6 +761,18 @@ form{
     padding: 30px 170px;
 }
 
+#vozila{
+    padding-top: 90px;
+}
+
+#imot{
+    padding-top: 90px;
+}
+
+
+#lica {
+    padding-top: 90px;
+}
 
 @media only screen and (max-width: 850px) {
     
