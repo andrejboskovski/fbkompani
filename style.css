@@ -1,4 +1,10 @@
 
+html{
+    overflow-x: hidden;
+}
+
+
+
 /* Background */
 
 .background {
@@ -9,21 +15,27 @@
     
 }
 
-@media only screen and (max-width: 100px) {
-    .background {
-        margin-top: 50px;
-    }
+
+
+
+
+
+
+
+/* Navbar toggle
+
+/* header{
+    justify-content: space-around;
 }
-
-
-/* Navbar toggle */
-
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     height: 70px;
+    z-index: 3;
+    
+    
     
 }
 
@@ -35,7 +47,7 @@
 /* Navbar */
 
 
-.logo {
+/* .logo {
     position: fixed;
     width: 80px;
     height: 65px;
@@ -43,7 +55,16 @@
     padding: px 0px 0px 00px;
     top: 12px;
     left: 20px;
+    z-index: 10;
+    
 }
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        visibility: hidden;
+    }
+}
+
 
 
 .navbar-div {
@@ -53,14 +74,21 @@
     opacity: 60%;
     width: 100%;
     height: 85px;
-
+    z-index: 3;
+    
 }
 
+.navbar-div.scrolled {
+    background-color: black;
+    opacity: 90%;
+    transition: background-color 200ms linear;
+}
 
 .nav {
     float: right;
     font-size: 15px;
     color: white;
+    
 }
 
 .nav ul {
@@ -71,7 +99,6 @@ nav li {
     list-style: none;
     display: inline-block;
     color: white;
-    margin: 30px 50px 0 0;
     font-family: 'Montserrat',
         sans-serif;
 
@@ -86,11 +113,11 @@ a {
 li a:hover {
     color: grey;
     text-decoration: none;
-}
+} */ 
 
 /* Navbar and nav toogle media queries */
 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
     .navbar {
         visibility: hidden;
     }
@@ -98,22 +125,360 @@ li a:hover {
 
 nav li {
     margin: 30px 10px 0 0;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 1000px) {
     .navbar-div {
         visibility: hidden;
     }
+} */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
-@media only screen and (min-width: 1000px) {
+a:hover{
+    color: lightblue;
+    text-decoration: none;
+}
 
-    nav li {
-        margin: 30px 20px 0 0;
-        font-size: 15px;
+header {
+    top: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+}
+
+.logo {
+    margin: 10px 0;
+    width: 70px;
+    float: left;
+    display: flex;
+    z-index: 10;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 60px;
+        margin-top: 6px;
     }
 }
+
+.navbar-whole {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    padding: 0 15%;
+    z-index: 3;
+    background-image: url(./images/black-opacity60.png);
+    
+}
+
+
+.navbar-whole.scrolled {
+    background-image: url(./images/black-opacity90.png);
+    transition: background-image 200ms linear;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1em;
+    flex-grow: 1;
+    padding-top: 30px;
+    
+
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.a{
+    color: white;
+}
+
+.menu {
+    color: white;
+    font-family: montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+}
+
+.a:hover {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+
+}
+
+li:nth-child(5) {
+    margin-left: auto;
+
+}
+
+/* Nav Toggle icon */
+
+.toggle-icon {
+
+    position: absolute;
+    left: 80%;
+    padding-top: 15px;
+    cursor: pointer;
+    z-index: 100;
+    
+
+}
+
+.toggle-icon-click {
+    float: right;
+    padding-top: 25px;
+    cursor: pointer;
+    color: red;
+}
+
+@media only screen and (min-width: 900px) {
+    .toggle-icon {
+        display: none;
+    }
+}
+
+
+
+.line1 {
+    height: 3px;
+    width: 25px;
+    background-color:white;
+    margin-top: 5px;
+    
+
+}
+
+.line2 {
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-top: 5px;
+    
+}
+
+.line3 {
+    height: 3px;
+    width: 15px;
+    background-color:  white;
+    margin-top: 5px;
+    
+    
+}
+
+
+/* Toggle */
+
+
+
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    opacity: 95%;
+    z-index: 110;
+
+    transform: translate(100%, 0);
+    transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.toggle-click {
+
+    transform: translate(0%, 0);
+    transition: transform 0.6s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+/* Toggle icon inside */
+
+.toggle-icon-inside {
+    position: absolute;
+    float: right;
+    right: 21%;
+    cursor: pointer;
+}
+
+.line1inside {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-top: 30px;
+}
+
+
+.line3inside {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: 30px;
+
+}
+
+
+
+.navbar-links-toggle {
+
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+}
+
+.a-toggle {
+    color: white;
+}
+
+.a-toggle:hover{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.menu-toggle-whole1 {
+    margin-top: 90px;
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Section 2 Cards */
@@ -141,7 +506,7 @@ nav li {
 
 @media only screen and (max-width: 1024px) {
     .card1 {
-        height: 200px;
+        height: 150px;
         margin: 0;
         display: inline-block;
         margin: 30px 0 20px 0;
@@ -150,7 +515,7 @@ nav li {
 
 @media only screen and (max-width: 1024px) {
     .card1:hover {
-        height: 220px;
+        height: 160px;
         ;
         margin: 0;
         box-shadow: 3px 3px 1px #ccc;
@@ -158,6 +523,7 @@ nav li {
         -webkit-box-shadow: 3px 3px 1px #ccc;
         -khtml-box-shadow: 3px 3px 1px #ccc;
     }
+
 }
 
 /* Dostava */
@@ -177,19 +543,20 @@ nav li {
 
 .coll {
     display: flex;
-    background-color: rgb(218, 218, 218);
-    padding: 30px 170px;
+    background: linear-gradient(to right, rgb(218, 218, 218), rgb(152, 152, 152));
+    padding: 30px 170px 40px 170px;
 }
 
 .cb-heading {
     font-family: 'Montserrat',
         sans-serif;
     font-size: 50px;
-    margin: 30px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 
 .cb-p {
+    padding-right: 30px;
     float: left;
     font-size: 20px;
     font-family: 'Montserrat bold',
@@ -205,10 +572,10 @@ nav li {
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 850px) {
-    .cb-heading {
-        margin: 0;
-        text-align: left;
+@media only screen and (max-width: 736px) {
+   
+    .cb-heading{
+        text-align: center;
     }
 
     .coll {
@@ -216,11 +583,18 @@ nav li {
         margin: 0;
         text-align: left;
         padding: 100px 70px;
+        max-width: 100%;
+    }
+
+    .cbbtn{
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .cashback-photo {
-        width: 400px;
-        padding: 10px 0 10px 0px
+       
+        padding: 10px 0 10px 0px;
+        max-width: 100%;
     }
 }
 
@@ -231,22 +605,24 @@ nav li {
 
 .social-media {
     margin: 40px 0 0 0;
+    align-items: center;
 }
 
 .social-icons {
     margin: 20px auto;
     list-style: none;
-
 }
+
 
 .list {
     display: inline-block;
-    margin: auto 20px;
+    margin: 10px 50px 0px 0;
 }
 
 .social-img {
     height: 40px;
-    margin: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .social-img:hover {
@@ -293,7 +669,8 @@ footer {
 /* map */
 
 .kontakt-heading{
-    margin-left: 145px;
+    margin-left: 190px;
+    margin-bottom: 50px;
 }
 
 form{
@@ -312,9 +689,12 @@ form{
 .card {
     position: absolute;
     left: 1070px;
-    top: 1005px;
+    top: 1050px;
 
 }
+
+
+
 
 @media only screen and (max-width: 1000px) {
     .card {
@@ -322,13 +702,21 @@ form{
         margin: auto;
 
     }
+
+    .kontakt-heading{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
 }
+
+
+
 
 @media only screen and (min-width: 1900px) {
     .card {
         position: absolute;
         left: 1370px;
-        top: 1135px;
+        top: 1170px;
 
     }
 }
@@ -345,19 +733,21 @@ form{
 
 @media only screen and (max-width: 850px) {
     .cb-heading {
-        margin: 0;
+        margin: auto;
         text-align: left;
+        font-size: 30px;
+
     }
 
     .coll-za-nas {
         flex-direction: column-reverse;
-        margin: 0;
+        margin: auto;
         text-align: left;
-        padding: 100px 70px;
+        padding: 10px 70px;
     }
 
     .cashback-photo {
-        width: 400px;
+        width: 360px;
         padding: 10px 0 10px 0px
     }
 }
@@ -369,4 +759,31 @@ form{
 .osiguruvanje{
     
     padding: 30px 170px;
+}
+
+#vozila{
+    padding-top: 90px;
+}
+
+#imot{
+    padding-top: 90px;
+}
+
+
+#lica {
+    padding-top: 90px;
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .osiguruvanje {
+        
+        margin: 0;
+        text-align: left;
+        padding: 20px 70px;
+    }
+
+    .os-heading {
+        font-size: 35px;
+    }
 }
