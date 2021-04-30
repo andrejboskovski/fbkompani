@@ -620,19 +620,23 @@ form{
 
 /* myWorld ************************************************************************* */
 
-
+.containerMy{
+margin: 10px 15%;
+}
 
 .myHeading{
-
-    margin: 10px 10%;
-
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .myP{
-    margin: 30px 10%;
-    font-size: 16px;
+    padding-bottom: 20px
 }
 
-.cbbtnMY{
-    margin-left: 10%;
+@media only screen and (max-width: 900px) {
+
+    .containerMy{
+        text-align: center;
+    }
 }
