@@ -637,6 +637,12 @@ margin: 10px 15%;
 @media only screen and (max-width: 900px) {
 
     .containerMy{
+        margin: 30px 30px;
         text-align: center;
+    }
+
+    .cbbtnMY{
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
