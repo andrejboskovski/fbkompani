@@ -45,6 +45,7 @@ max-width: 100%;
 .navbutton{
      position: absolute;
      top: 22px;
+     left: 80%;
      margin-left: auto;
      margin-right: auto;
      font-size: 14px;
@@ -149,7 +150,7 @@ li:nth-child(5) {
 
     position: absolute;
     left: 80%;
-    padding-top: 15px;
+    padding-top: 21px;
     cursor: pointer;
     z-index: 100;
     
@@ -176,6 +177,7 @@ li:nth-child(5) {
     width: 25px;
     background-color:white;
     margin-top: 5px;
+    
     
 
 }
@@ -207,7 +209,7 @@ li:nth-child(5) {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 50%;
     height: 100%;
     background-color: black;
     opacity: 95%;
