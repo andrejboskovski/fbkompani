@@ -1,6 +1,3 @@
-
-
-
 // navbar changing color on scroll
 
 $(function () {
@@ -12,15 +9,10 @@ $(function () {
 
 // Toggle menu opening
 
-$(".toggle-icon").click(function(){
+$(".toggle-icon").click(function () {
   $(".toggle").addClass("toggle-click");
-  });
+});
 
-$(".toggle-icon-inside").click(function(){
+$(".toggle-icon-inside").click(function () {
   $(".toggle").removeClass("toggle-click");
-  });
-
-
-
-
-
+});

@@ -29,19 +29,19 @@
     <img src="./style/images/about us.png" alt="background" class="background">
 
     <img src="./style/images/about us small.png" alt="background" class="background-phone">
-    
+
     <!-- Navbar -->
 
     <header>
-        <nav class="navbar-whole ">
-            <a href="index.html"> <img  src="./style/images/FBcompany logo original.png" alt="logo" class="logo"></a>
+        <nav class="navbar-whole" style="background-color: black; opacity: 90%;">
+            <a href="index.html"> <img src="./style/images/FBcompany logo original.png" alt="logo" class="logo"></a>
             <ul class="navbar-links">
                 <li class="menu"><a class="a" href="index.html">ПОЧЕТНА</a></li>
                 <li class="menu"><a class="a" href="za nas.html">ЗА НАС</a></li>
                 <li class="menu"><a class="a" href="osiguruvanje.html">ОСИГУРУВАЊЕ</a></li>
                 <li class="menu"><a class="a" href="myWorld.html">myWorld</a></li>
-                <li class="menu"><a href="kontakt.html"><button
-                    type="button" class="btn btn-outline-light navbutton text-center">КОНТАКТ</button></a>
+                <li class="menu"><a href="kontakt.html"><button type="button"
+                            class="btn btn-outline-light navbutton text-center">КОНТАКТ</button></a>
             </ul>
 
 
@@ -77,7 +77,9 @@
                 <li class="menu-toggle"><a class="a-toggle" href="osiguruvanje.html">ОСИГУРУВАЊЕ</a></li> <br> <br>
                 <li class="menu-toggle"><a class="a-toggle" href="myWorld.html">myWorld</a></li> <br> <br>
                 <li class="menu-toggle"><a class="a-toggle" href="kontakt.html"><a href="kontakt.html"><button
-                    type="button" class="btn btn-outline-light text-center navbuttonphone">КОНТАКТ</button></a></a> <br> <br>
+                                type="button"
+                                class="btn btn-outline-light text-center navbuttonphone">КОНТАКТ</button></a></a> <br>
+                    <br>
             </div>
         </ul>
     </div>
@@ -97,10 +99,10 @@
             <br>
             <p class="cb-p">ФБ Компани е компанија за промоции на секаков вид на полиси за животно и неживотно
                 осигурување.
-<br>
+                <br>
                 Фокус на нашата работа се нашите клиенти, затоа секојдневно создаваме посигурна иднина за истите и
                 формираме база на лојални клиенти.
-<br>
+                <br>
                 Во ,,ФБ Компани’’ посветено работиме на одржување на сигурноста при вашиот избор на осигурителна полиса,
                 нашата главна цел е да ви обезбедиме стручна помош преку анализирање на ризиците и давање на стручен
                 совет за заедно да дојдеме до најсоодветното решение за вас кога станува збор за осигурување од било
@@ -135,14 +137,14 @@
     <!-- Section 4 Social Media -->
 
 
-<hr class="hr">
+    <hr class="hr">
 
-  <div class="social-media">
+    <div class="social-media">
         <center>
             <h3>Заследете не!</h3>
         </center>
     </div>
- <div class="social-icons">
+    <div class="social-icons">
         <center>
             <ul>
                 <li class="list"><a href=""></a><img class="social-img" src="./style/images/social icons/instagram.png"
@@ -169,30 +171,29 @@
     </footer>
 
 
-<!-- Messenger Chat Plugin Code -->
+    <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
         };
 
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-      </script>
+    </script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="page_inbox"
-        page_id="1618305578414182">
-      </div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="1618305578414182">
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

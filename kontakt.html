@@ -35,14 +35,14 @@
 
     <header>
         <nav class="navbar-whole">
-            <a href="index.html"> <img  src="./style/images/FBcompany logo original.png" alt="logo" class="logo"></a>
+            <a href="index.html"> <img src="./style/images/FBcompany logo original.png" alt="logo" class="logo"></a>
             <ul class="navbar-links">
                 <li class="menu"><a class="a" href="index.html">ПОЧЕТНА</a></li>
                 <li class="menu"><a class="a" href="za nas.html">ЗА НАС</a></li>
                 <li class="menu"><a class="a" href="osiguruvanje.html">ОСИГУРУВАЊЕ</a></li>
                 <li class="menu"><a class="a" href="myWorld.html">myWorld</a></li>
-                <li class="menu"><a href="kontakt.html"><button
-                    type="button" class="btn btn-outline-light navbutton text-center">КОНТАКТ</button></a>
+                <li class="menu"><a href="kontakt.html"><button type="button"
+                            class="btn btn-outline-light navbutton text-center">КОНТАКТ</button></a>
             </ul>
 
 
@@ -78,7 +78,9 @@
                 <li class="menu-toggle"><a class="a-toggle" href="osiguruvanje.html">ОСИГУРУВАЊЕ</a></li> <br> <br>
                 <li class="menu-toggle"><a class="a-toggle" href="myWorld.html">myWorld</a></li> <br> <br>
                 <li class="menu-toggle"><a class="a-toggle" href="kontakt.html"><a href="kontakt.html"><button
-                    type="button" class="btn btn-outline-light text-center navbuttonphone">КОНТАКТ</button></a></a> <br> <br>
+                                type="button"
+                                class="btn btn-outline-light text-center navbuttonphone">КОНТАКТ</button></a></a> <br>
+                    <br>
         </ul>
     </div>
     </nav>
@@ -87,124 +89,132 @@
 
 
 
-    <div class="KONTAKT">
+    <div class="kontakt">
 
 
 
 
 
-<h1 class="kontakt-heading">Контакт</h1>
+        <h1 class="kontakt-heading">Контакт</h1>
 
 
 
 
 
-<form id="contact-form" method="post" action="mailto:fb_kom@yahoo.com" role="form">
+        <form id="contact-form" method="post" action="mailto:fb_kom@yahoo.com" role="form">
 
-    <div class="messages"></div>
+            <div class="messages"></div>
 
-    <div class="controls">
+            <div class="controls">
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">Име *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Ве молиме внесете го вашето име *" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Име *</label>
+                            <input id="form_name" type="text" name="name" class="form-control"
+                                placeholder="Ве молиме внесете го вашето име *" required="required"
+                                data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Презиме *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                placeholder="Ве молиме внесете го вашето презиме *" required="required"
+                                data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control"
+                                placeholder="Ве молиме внесете го вашиот email *" required="required"
+                                data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Услуга која ви е потребна *</label>
+                            <select id="form_need" name="need" class="form-control" required="required"
+                                data-error="Please specify your need.">
+                                <option value=""></option>
+                                <option value="Request quotation">Осигурување</option>
+                                <option value="Request order status">Cashback</option>
+                                <option value="Request copy of an invoice">Останато</option>
+
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Порака *</label>
+                            <textarea id="form_message" name="message" class="form-control"
+                                placeholder="Вашата порака *" rows="4" required="required"
+                                data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary btn-send" value="Испрати порака">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                            <strong>*</strong> Овие полиња се задолжителни.
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_lastname">Презиме *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Ве молиме внесете го вашето презиме *" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
+
+        </form>
+
+
+
+
+
+
+
+
+
+        <!-- CARD -->
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./style/images/FBcompany logo original.png" alt="logo">
+            <div class="card-body">
+                <h5 class="card-title">ФБ КОМПАНИ ДООЕЛ</h5>
+                <p class="card-text">Улица 624.бб Автокоманда, Скопје
+                    <br> Тел : 070/227-331, 070/227-096
+                    <br> E-mail : fb-kom@yahoo.com
+
+                </p>
+
+                <a href="https://www.google.com/maps/place/FB+Company,+624+Macedonia+bb+MK,+Skopje+1000/@41.9988615,21.4600286,17z/data=!4m2!3m1!1s0x1354159ba159ff97:0x80174e898a7996e7"
+                    class="btn btn-primary" target="_blank">Однеси ме!</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Ве молиме внесете го вашиот email *" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_need">Услуга која ви е потребна *</label>
-                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                        <option value=""></option>
-                        <option value="Request quotation">Осигурување</option>
-                        <option value="Request order status">Cashback</option>
-                        <option value="Request copy of an invoice">Останато</option>
-                        
-                    </select>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Порака *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Вашата порака *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-primary btn-send" value="Испрати порака">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-muted">
-                    <strong>*</strong> Овие полиња се задолжителни.
-            </div>
-        </div>
+
     </div>
+    <!-- MAP -->
 
-</form>
-
-
-
-
-
+    <iframe width="1924" height="508" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+        src="https://maps.google.com/maps?width=1924&amp;height=508&amp;hl=en&amp;q=FB%20KOMPANI%20Skopje+(%D0%A4%D0%91%20%D0%9A%D0%9E%D0%9C%D0%9F%D0%90%D0%9D%D0%98)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+        href='https://maps-generator.com/'>Maps Generator</a>
 
 
 
 
-<!-- CARD -->
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./style/images/FBcompany logo original.png" alt="logo">
-        <div class="card-body">
-            <h5 class="card-title">ФБ КОМПАНИ ДООЕЛ</h5>
-            <p class="card-text">Улица 624.бб Автокоманда, Скопје
-                <br> Тел : 070/227-331, 070/227-096
-                <br> E-mail : fb-kom@yahoo.com
-                
-            </p>
-          
-            <a href="https://www.google.com/maps/place/FB+Company,+624+Macedonia+bb+MK,+Skopje+1000/@41.9988615,21.4600286,17z/data=!4m2!3m1!1s0x1354159ba159ff97:0x80174e898a7996e7"
-                class="btn btn-primary" target="_blank">Однеси ме!</a>
-        </div>
+
+
+
+
     </div>
-
-</div>
-<!-- MAP -->
-
- <iframe width="1924" height="508" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?width=1924&amp;height=508&amp;hl=en&amp;q=FB%20KOMPANI%20Skopje+(%D0%A4%D0%91%20%D0%9A%D0%9E%D0%9C%D0%9F%D0%90%D0%9D%D0%98)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-            href='https://maps-generator.com/'>Maps Generator</a>
-
-    
-
-
-
-
-
-
-
 
 
 
@@ -213,17 +223,17 @@
 
 
 
-<div class="social-media">
+    <div class="social-media">
         <center>
             <h3>Заследете не!</h3>
-        
+
     </div>
-</center>
+    </center>
     <div class="social-icons">
         <center>
             <ul>
-                <li class="list insta"><a href=""></a><img class="social-img" src="./style/images/social icons/instagram.png"
-                        alt="instagram-ico"></li>
+                <li class="list insta"><a href=""></a><img class="social-img"
+                        src="./style/images/social icons/instagram.png" alt="instagram-ico"></li>
                 <li class="list"><a href="https://www.facebook.com/fbkompani" target="_blank"><img class="social-img"
                             src="./style/images/social icons/facebook.png" alt="facebook-ico"></a></li>
                 <li class="list"><a
@@ -245,30 +255,29 @@
     </footer>
 
 
-   <!-- Messenger Chat Plugin Code -->
+    <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
         };
 
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-      </script>
+    </script>
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="page_inbox"
-        page_id="1618305578414182">
-      </div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="1618305578414182">
+    </div>
 
 
 
