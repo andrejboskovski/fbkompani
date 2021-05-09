@@ -116,6 +116,7 @@ li {
 
 .a {
     color: white;
+    transition: 0.2s ease-in-out;
 }
 
 .menu {
@@ -141,7 +142,10 @@ li {
 li:nth-child(5) {
     margin-left: auto;
 
-}
+} 
+
+
+
 
 /* Nav Toggle icon */
 
@@ -315,13 +319,10 @@ li:nth-child(5) {
 }
 
 .card1:hover {
-    height: 305px;
+    transform: scale(1.2);
     margin-bottom: 0;
 
-    box-shadow: 3px 3px 1px #ccc;
-    -moz-box-shadow: 3px 3px 1px #ccc;
-    -webkit-box-shadow: 3px 3px 1px #ccc;
-    -khtml-box-shadow: 3px 3px 1px #ccc;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -337,13 +338,9 @@ li:nth-child(5) {
 
 @media only screen and (max-width: 1024px) {
     .card1:hover {
-        height: 160px;
-        ;
+        transform: scale(1.2);
         margin: 0;
-        box-shadow: 3px 3px 1px #ccc;
-        -moz-box-shadow: 3px 3px 1px #ccc;
-        -webkit-box-shadow: 3px 3px 1px #ccc;
-        -khtml-box-shadow: 3px 3px 1px #ccc;
+        
     }
 
 }
@@ -430,39 +427,65 @@ li:nth-child(5) {
 
 
 
-/* Section 4 - Social Media */
+/* Footer information */
 
-.social-media {
-    margin: 40px 0 0 0;
+.row-footer{
+    padding: 50px 15%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.social-icons {
-    margin: 20px auto;
-    list-style: none;
+@media only screen and (max-width: 900px) {
+.row-footer{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 900px) {
+    .col1, .col2, .col3, .col4 {
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.row-footer h5{
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(51, 51, 51);
 }
 
 
-.list {
-    display: inline-block;
-    margin: 10px 35px 0px 0;
+.row-footer h6{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(82, 82, 82);
 }
 
-.social-img {
-    height: 40px;
-    margin-bottom: 10px;
-
-}
-
-.social-img:hover {
-    height: 45px;
-    margin-bottom: 0px;
+.social{
+    display: flex;
+    align-items: center;  
 }
 
 
+.social img{
+    padding-right: 15px;
+    height: 20px;
+    color: rgb(161, 161, 161);
+}
 
 
+.footer-links{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+}
 
+.footer-links:hover{
+    color: rgb(51, 51, 51);
+}
 
 /* footer */
 
@@ -635,6 +658,14 @@ form {
 
 .myP {
     padding-bottom: 20px
+}
+
+.myworld-link{
+    color: blue;
+}
+
+.myworld-link:hover{
+    color: cadetblue;
 }
 
 @media only screen and (max-width: 900px) {
