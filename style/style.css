@@ -89,14 +89,18 @@ header {
     flex-grow: 1;
     padding: 0 15%;
     z-index: 3;
-    background-image: url(./images/black-opacity60.png);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 
 }
 
 
 .navbar-whole.scrolled {
-    background-image: url(./images/black-opacity90.png);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
     transition: background-image 200ms linear;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .navbar-links {
@@ -156,8 +160,12 @@ li:nth-child(5) {
     padding-top: 21px;
     cursor: pointer;
     z-index: 100;
+}
 
-
+.fa-align-right {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 5px;  
 }
 
 .toggle-icon-click {
@@ -315,14 +323,13 @@ li:nth-child(5) {
     height: 300px;
     margin: 0;
     display: inline-block;
-    margin: 15px 0 50px 0;
+    margin: 50px 0 50px 0;
+    transition: 0.4s ease-in-out;
 }
 
 .card1:hover {
     transform: scale(1.2);
-    margin-bottom: 0;
-
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 
@@ -338,7 +345,7 @@ li:nth-child(5) {
 
 @media only screen and (max-width: 1024px) {
     .card1:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         margin: 0;
         
     }
@@ -452,7 +459,8 @@ li:nth-child(5) {
 }
 
 .row-footer h5{
-    font-weight: 700;
+    padding-bottom: 5px;
+    font-weight: 600;
     font-size: 17px;
     color: rgb(51, 51, 51);
 }
@@ -465,16 +473,26 @@ li:nth-child(5) {
 }
 
 .social{
-    display: flex;
-    align-items: center;  
+    margin-right: 15px;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+
 }
 
+@media only screen and (max-width:900px){
 
-.social img{
-    padding-right: 15px;
-    height: 20px;
-    color: rgb(161, 161, 161);
+    .social-all{
+       display: flex;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .social{
+        padding-left: 15px;
+    }
 }
+
 
 
 .footer-links{
@@ -518,7 +536,7 @@ footer {
 
 .kontakt {
 
-    padding: 10px 6%;
+    padding: 0px 6%;
 }
 
 /* map */
@@ -551,10 +569,24 @@ form {
     left: 70%;
     z-index: 2;
     box-shadow: 0 0 15px grey;
-
 }
 
 
+
+.contact-button{
+    background-color: #0275d8;
+    color: white;
+    border: 1px solid;
+    border-radius:5px;
+    padding: 8px 20px; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+
+    background-color: #0064bb;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -610,7 +642,7 @@ form {
 
 .osiguruvanje {
 
-    padding: 30px 15%;
+    padding: 0px 15%;
 }
 
 #vozila {
@@ -659,11 +691,11 @@ form {
 }
 
 .myworld-link{
-    color: blue;
+    color: rgb(99, 99, 99);
 }
 
 .myworld-link:hover{
-    color: cadetblue;
+    color: black;
 }
 
 @media only screen and (max-width: 900px) {
