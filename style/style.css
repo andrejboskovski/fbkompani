@@ -2,6 +2,25 @@ html {
     overflow-x: hidden;
 }
 
+@media only screen and (max-width:900px){
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        text-align: left;
+        
+    }
+
+    ul li {
+        padding-left: 8px;
+        list-style:none;
+        margin-bottom: 6px;
+        text-align: center;
+        text-indent: -12px;
+    }
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -459,7 +478,7 @@ li:nth-child(5) {
 }
 
 .row-footer h5{
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     font-weight: 600;
     font-size: 17px;
     color: rgb(51, 51, 51);
@@ -622,10 +641,13 @@ form {
     }
 
     .cb-p {
+        padding-right: 0;
         text-align: center;
+        
     }
 
     .coll-za-nas {
+        
         flex-direction: column;
         padding: 30px 30px;
     }
