@@ -445,7 +445,7 @@ li:nth-child(5) {
 
 @media only screen and (max-width: 900px) {
     .col1, .col2, .col3, .col4 {
-        padding-top: 20px;
+        padding-top: 20px; 
         align-items: center;
         text-align: center;
     }
@@ -533,9 +533,13 @@ form {
     margin: auto;
 }
 
-
+.map-card{
+    position: relative;
+    
+}
 
 #gmap_canvas {
+    position: relative;
     margin-top: 30px;
     max-width: 100%;
 }
@@ -543,8 +547,10 @@ form {
 
 .card {
     position: absolute;
+    top: 50px;
     left: 70%;
-    top: 1085px;
+    z-index: 2;
+    box-shadow: 0 0 15px grey;
 
 }
 
@@ -566,14 +572,6 @@ form {
 
 
 
-@media only screen and (min-width: 1900px) {
-    .card {
-        position: absolute;
-        left: 1370px;
-        top: 1210px;
-
-    }
-}
 
 
 
