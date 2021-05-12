@@ -409,20 +409,21 @@ li:nth-child(5) {
     padding: 10px 25px;
     cursor: pointer;
 
-    transition: 0.9s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .main-btn:hover {
-    background-color: grey;
-    padding: 7px 20px;
-    transition: 0.9s ease-in-out;
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
 
 }
 
 
 @media only screen and (max-width:800px) {
     .main-btn {
-
+        border-radius: 5px;
         padding: 5px 15px;
         display: flex;
         align-items: center;
@@ -430,7 +431,16 @@ li:nth-child(5) {
         margin-right: auto;
     }
 
+    .main-btn:hover {
+
+        padding: 7px 17px;
+
+
+    }
 }
+
+
+
 
 /* Section 2 Cards */
 
@@ -458,11 +468,12 @@ li:nth-child(5) {
         display: inline-block;
         margin: 30px 0 20px 0;
     }
-     .card1:hover {
-         transform: scale(1.1);
-         margin: 0;
 
-     }
+    .card1:hover {
+        transform: scale(1.1);
+        margin: 0;
+
+    }
 }
 
 
