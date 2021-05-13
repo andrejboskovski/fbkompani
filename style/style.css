@@ -423,6 +423,7 @@ li:nth-child(5) {
 
 @media only screen and (max-width:800px) {
     .main-btn {
+        
         border-radius: 5px;
         padding: 5px 15px;
         display: flex;
@@ -432,7 +433,7 @@ li:nth-child(5) {
     }
 
     .main-btn:hover {
-
+        
         padding: 7px 17px;
 
 
@@ -463,10 +464,10 @@ li:nth-child(5) {
 
 @media only screen and (max-width: 900px) {
     .card1 {
-        height: 180px;
+        height: 200px;
         margin: 0;
         display: inline-block;
-        margin: 30px 0 20px 0;
+        margin: 30px 0 40px 0;
     }
 
     .card1:hover {
@@ -632,7 +633,18 @@ li:nth-child(5) {
 }
 
 .footer-links:hover {
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width:900px) {
+    .fa-instagram{
+padding-left: 0.5px;
+    }
+
+    .fa-facebook-f {
+padding-left: 3.2px;
+    }
+  
 }
 
 /* footer */
@@ -690,6 +702,7 @@ form {
     position: relative;
     margin-top: 30px;
     max-width: 100%;
+     box-shadow: 0 0 15px grey;
 }
 
 
@@ -723,6 +736,7 @@ form {
     .card {
         position: static;
         margin: auto;
+        
 
     }
 
