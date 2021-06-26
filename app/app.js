@@ -16,3 +16,7 @@ $(".toggle-icon").click(function () {
 $(".toggle-icon-inside").click(function () {
   $(".toggle").removeClass("toggle-click");
 });
+
+
+
+
