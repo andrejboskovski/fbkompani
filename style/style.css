@@ -559,9 +559,10 @@ li:nth-child(5) {
     margin: 32px 15% 20px 15%;
     font-family: 'Montserrat',
     sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
+
 
 
 .horizontal_slider{
@@ -592,7 +593,17 @@ li:nth-child(5) {
     transition: 0.4s ease-in-out;
 }
 
+@media only screen and (max-width:900px) {
+    .slider-header {
+       text-align: center;
+    }
 
+    .item img{
+        width: 200px;
+        padding-bottom: 0px;
+    }
+
+}
 
 /* Footer and Social media */
 
