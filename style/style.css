@@ -244,7 +244,7 @@ li:nth-child(5) {
     right: 0;
     width: 50%;
     height: 100%;
-    border-radius: 15px 0  15px 0;
+    border-radius: 15px 0  0 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: (10px);
     background-color: rgba(0, 0, 0, 1);
