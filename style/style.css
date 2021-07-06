@@ -112,6 +112,7 @@ header {
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border-radius: 0 0 15px 15px;
 
 }
 
@@ -243,7 +244,10 @@ li:nth-child(5) {
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: black;
+    border-radius: 15px 0  15px 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: (10px);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 95%;
     z-index: 110;
 
@@ -484,6 +488,7 @@ li:nth-child(5) {
     background-color: black;
     color: white;
     padding: 25px 20px;
+    border-radius: 15px 15px 0 0;
 }
 
 
@@ -498,6 +503,7 @@ li:nth-child(5) {
     display: flex;
     background: linear-gradient(to right, rgb(218, 218, 218), rgb(152, 152, 152));
     padding: 50px 170px 50px 170px;
+    border-radius: 0 0 15px 15px;
 }
 
 .cb-heading {
@@ -518,7 +524,8 @@ li:nth-child(5) {
 
 .cashback-photo {
     width: auto;
-    padding: 10px 0 10px 60px
+    margin: 10px 0 10px 60px;
+    border-radius: 15px;
 }
 
 
@@ -748,7 +755,8 @@ form {
     position: relative;
     margin-top: 30px;
     max-width: 100%;
-     box-shadow: 0 0 15px grey;
+    box-shadow: 0 0 15px grey;
+    border-radius: 15px;
 }
 
 
@@ -758,6 +766,7 @@ form {
     left: 70%;
     z-index: 2;
     box-shadow: 0 0 15px grey;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -822,7 +831,7 @@ form {
 
     .cashback-photo {
         width: 100%;
-        padding: 10px 0 10px 0px
+        padding: 10px 0 10px 0px;
     }
 }
 
