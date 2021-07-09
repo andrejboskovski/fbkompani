@@ -113,8 +113,6 @@ header {
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-    border-radius: 0 0 15px 15px;
-
 }
 
 
