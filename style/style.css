@@ -180,8 +180,8 @@ li:nth-child(5) {
 .toggle-icon {
 
     position: absolute;
-    left: 80%;
-    padding-top: 21px;
+    left: 84%;
+    padding-top: 19px;
     cursor: pointer;
     z-index: 100;
 }
