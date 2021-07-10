@@ -490,6 +490,10 @@ li:nth-child(5) {
     border-radius: 15px 15px 0 0;
 }
 
+.dostava1{
+    padding-top: 10px;
+}
+
 
 
 /* Section 4 - Cashback */
@@ -501,7 +505,7 @@ li:nth-child(5) {
 .coll {
     display: flex;
     background: linear-gradient(to right, rgb(218, 218, 218), rgb(152, 152, 152));
-    padding: 50px 170px 50px 170px;
+    padding: 50px 10% 50px 10%;
     border-radius: 0 0 15px 15px;
 }
 
@@ -735,6 +739,8 @@ footer {
 
 /* map */
 
+
+
 .kontakt-heading {
     padding: 10px 10%;
     margin-bottom: 50px;
@@ -766,8 +772,8 @@ form {
     z-index: 2;
     box-shadow: 0 0 15px grey;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
 }
 
