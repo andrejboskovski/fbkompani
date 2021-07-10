@@ -103,23 +103,25 @@ header {
 
 .navbar-whole {
     position: fixed;
-    top: 0;
-    width: 100%;
+    
+    width: 90%;
     display: flex;
     flex-grow: 1;
-    padding: 0 15%;
+    padding: 0 10%;
+    margin: 0 5% 0 ;
     z-index: 3;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border-radius: 15px;
 }
 
 
 .navbar-whole.scrolled {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     transition: background-image 200ms linear;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
@@ -161,6 +163,7 @@ li {
 .a:hover {
     text-decoration: none;
     color: rgb(189, 189, 189);
+    transform: scale(1.1);
 
 }
 
