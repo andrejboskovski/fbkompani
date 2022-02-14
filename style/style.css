@@ -1,3 +1,28 @@
+
+
+
+
+.main-photo{
+    height: 600px;
+    width: 80%;
+    background-color: rgb(218, 218, 218);
+    margin-left: 20%;
+    border-radius: 0 0 120px 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     overflow-x: hidden;
 }
@@ -103,18 +128,17 @@ header {
 
 .navbar-whole {
     position: fixed;
-    
-    width: 90%;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-grow: 1;
     padding: 0 10%;
-    margin: 0 5% 0 ;
     z-index: 3;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-    border-radius: 15px;
+    
 }
 
 
@@ -344,6 +368,7 @@ li:nth-child(5) {
 .main-container {
     position: relative;
     max-height: 100%;
+    
 }
 
 .main-bg-pc {
@@ -373,6 +398,12 @@ li:nth-child(5) {
     left: 15%;
 }
 
+.right-texts{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+}
+
 @media only screen and (max-width:900px) {
     .main-texts {
         top: 50%;
@@ -385,21 +416,30 @@ li:nth-child(5) {
 .main-h1 {
     padding-bottom: 10px;
     text-transform: uppercase;
-    font-size: 3.7rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: white;
 
 }
 
+.right{
+    text-align: right;
+}
+
+.right-btn{
+    position: absolute;
+    right: 3px;
+    top: 110px;
+}
 
 
 
 @media only screen and (max-width:800px) {
     .main-h1 {
 
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        font-weight: 300;
         text-align: center;
 
     }
@@ -411,7 +451,7 @@ li:nth-child(5) {
     background-color: transparent;
     color: white;
     border-radius: 10px;
-    padding: 10px 25px;
+    padding: 5px 10px;
     cursor: pointer;
 
     transition: 0.5s ease-in-out;
@@ -533,7 +573,6 @@ li:nth-child(5) {
     margin: 10px 0 10px 60px;
     border-radius: 15px;
 }
-
 
 
 @media only screen and (max-width: 900px) {
