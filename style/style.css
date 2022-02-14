@@ -398,20 +398,30 @@ li:nth-child(5) {
     left: 15%;
 }
 
-.right-texts{
+.right-texts {
     position: absolute;
     top: 50%;
     right: 15%;
 }
 
+
 @media only screen and (max-width:900px) {
     .main-texts {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+  .right-texts {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 
 }
+
+
 
 .main-h1 {
     padding-bottom: 10px;
@@ -425,12 +435,6 @@ li:nth-child(5) {
 
 .right{
     text-align: right;
-}
-
-.right-btn{
-    position: absolute;
-    right: 3px;
-    top: 110px;
 }
 
 
@@ -465,6 +469,12 @@ li:nth-child(5) {
 
 }
 
+.right-btn {
+    position: absolute;
+    right: 3px;
+    top: 110px;
+}
+
 
 @media only screen and (max-width:800px) {
     .main-btn {
@@ -479,6 +489,15 @@ li:nth-child(5) {
 
     .main-btn:hover {   
         padding: 7px 17px;
+    }
+
+    .right-btn {
+       border-radius: 5px;
+       padding: 5px 15px;
+       display: flex;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
 
