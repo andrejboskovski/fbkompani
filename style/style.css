@@ -138,6 +138,7 @@ header {
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border-radius: 0 0 15px 15px;
     
 }
 
@@ -369,10 +370,12 @@ li:nth-child(5) {
     position: relative;
     max-height: 100%;
     
+    
 }
 
 .main-bg-pc {
     max-width: 100%;
+    border-radius: 0 0 15px 15px;
 }
 
 @media only screen and (max-width:900px) {
