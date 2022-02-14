@@ -470,14 +470,15 @@ li:nth-child(5) {
 }
 
 .right-btn {
+    width:fit-content;
     position: absolute;
-    right: 3px;
-    top: 110px;
+    right: 1px;
+    top: 115px;
 }
 
 
 @media only screen and (max-width:800px) {
-    .main-btn {
+    .main-btn{
         
         border-radius: 5px;
         padding: 5px 15px;
@@ -488,17 +489,10 @@ li:nth-child(5) {
     }
 
     .main-btn:hover {   
-        padding: 7px 17px;
+        transform: scale(1.01);
+        transition: 0.4s ease-in-out;
     }
 
-    .right-btn {
-       border-radius: 5px;
-       padding: 5px 15px;
-       display: flex;
-       align-items: center;
-       margin-left: auto;
-       margin-right: auto;
-    }
 }
 
 
