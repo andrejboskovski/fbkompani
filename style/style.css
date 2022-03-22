@@ -37,13 +37,12 @@ html {
     }
 }
 
-a {
-    color: white;
-    text-decoration: none;
+a{
+    color: #333333;
 }
 
-a:hover {
-    color: lightblue;
+a:hover{
+    color: gray;
     text-decoration: none;
 }
 
@@ -610,10 +609,7 @@ li:nth-child(5) {
         margin-top: 10px;
     }
     
-    .cashback-photo {
-        
-        
-    }
+   
 
     .cb-heading {
         margin: 20px auto;
@@ -677,6 +673,12 @@ li:nth-child(5) {
 }
 
 /* Footer and Social media */
+
+.footer-bg{
+    background: linear-gradient(to left, rgb(218, 218, 218), rgb(152, 152, 152));
+    padding: 50px 10% 50px 10%;
+    border-radius: 15px 15px 0px 0px;
+}
 
 .row-footer {
     padding: 50px 15%;
@@ -775,7 +777,6 @@ hr {
 
 footer {
     margin: 0;
-    background-color: white;
     padding: 20px;
     font-family: 'Montserrat',
         sans-serif;
