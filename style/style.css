@@ -37,11 +37,11 @@ html {
     }
 }
 
-a{
+a {
     color: #333333;
 }
 
-a:hover{
+a:hover {
     color: gray;
     text-decoration: none;
 }
@@ -586,11 +586,12 @@ li:nth-child(5) {
     font-family: 'Montserrat bold',
         sans-serif;
 }
-.cashback-photo{
-    max-width: 45%;
-    display: block;
+
+.cashback-photo {
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2%;
 }
 
 
@@ -608,14 +609,36 @@ li:nth-child(5) {
         margin-left: 5px;
         margin-top: 10px;
     }
-    
-   
+
+
 
     .cb-heading {
         margin: 20px auto;
     }
 
 }
+
+
+
+
+
+/* Здравствено осигурување */
+
+.zdravstveno {
+
+    display: flex;
+    padding: 50px 10% 50px 10%;
+
+}
+
+.zdravstveno-photo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+
 
 
 
@@ -636,6 +659,7 @@ li:nth-child(5) {
     display: block;
     width: 100%;
     overflow-x: scroll;
+    margin-bottom: 50px;
 }
 
 .slider_container {
@@ -674,7 +698,7 @@ li:nth-child(5) {
 
 /* Footer and Social media */
 
-.footer-bg{
+.footer-bg {
     background: linear-gradient(to left, rgb(218, 218, 218), rgb(152, 152, 152));
     padding: 50px 10% 50px 10%;
     border-radius: 15px 15px 0px 0px;
@@ -879,6 +903,7 @@ form {
 .coll-za-nas {
     display: flex;
     padding: 30px 12%;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -978,4 +1003,103 @@ form {
         margin-top: 10px;
         margin-left: 10px;
     }
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    background: rgb(32, 32, 32);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
+}
+
+
+
+.text-reset {
+    color: #979797;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.text-reset:hover {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+
+.me-4 {
+    padding-right: 15px;
+}
+
+
+
+/* ==========================
+
+    Copyright, last part
+
+=============================*/
+
+.copyright {
+    padding: 28px 0;
+    width: 100%;
+
+}
+
+.copyright span,
+.copyright a {
+    color: #878787;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.copyright a:hover {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.copyright-menu ul {
+    text-align: right;
+    margin: 0;
+}
+
+.copyright-menu li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.back-to-top {
+    position: relative;
+    z-index: 2;
+}
+
+.back-to-top .btn-dark {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 999;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.back-to-top .btn-dark:hover {
+    cursor: pointer;
+    background: #a0a0a0;
+    border-color: #a0a0a0;
 }
