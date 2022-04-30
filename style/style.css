@@ -493,6 +493,7 @@ li:nth-child(5) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    width: 110%;
   }
   .ins-card2 {
     -webkit-box-ordinal-group: 3;
@@ -503,6 +504,7 @@ li:nth-child(5) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+    width: 110%;
   }
   .ins-card4 {
     -webkit-box-ordinal-group: 4;
@@ -627,7 +629,7 @@ li:nth-child(5) {
 
 .cb-heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
+  font-size: 2.9em;
   margin: 50px 0 0 0;
 }
 
