@@ -479,13 +479,17 @@ li:nth-child(5) {
     "card1 card2 card3 card4";
     grid-gap: 1rem; 
 
-    padding: 50px;
+    padding: 50px 10%;
     
+}
+
+#h3-mobile{
+    display: none;
 }
 
 @media only screen and(min-width:1500px){
     .cards{
-        padding: 50px 10%;
+        padding: 50px 15%;
     }
 }
 
@@ -502,7 +506,7 @@ li:nth-child(5) {
 
     .ins-card1{
         order: 1;
-        width: 110%;
+        
     }
 
     .ins-card2{
@@ -511,7 +515,7 @@ li:nth-child(5) {
 
     .ins-card3{
         order:4;
-        width: 110%;
+        
     }
 
     .ins-card4{
@@ -520,6 +524,14 @@ li:nth-child(5) {
 
     .cards h3{
         font-size: 1.9em;
+    }
+
+    #h3-pc{
+        display: none;
+    }
+
+    #h3-mobile{
+        display: block;
     }
 }
 
@@ -580,6 +592,7 @@ li:nth-child(5) {
 .cards a:hover{
     text-decoration: none;
 }
+
 
 
 
