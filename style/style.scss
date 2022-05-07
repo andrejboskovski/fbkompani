@@ -112,7 +112,7 @@ header {
     box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
     -webkit-box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
     -moz-box-shadow: -1px 3px 20px 1px rgba(0, 0, 0, 0.73);
-    border-radius: 0 0 15px 15px;
+    
 }
 
 
@@ -472,6 +472,7 @@ li:nth-child(5) {
 
 
 .cards{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -700,60 +701,10 @@ li:nth-child(5) {
 
 
 
-// proba card design
 
-
-// .card-bv{
-//     margin: 15px 0;
-//     height: 292px;
-//     width: 220px;
-//     border: 2px solid rgb(199, 199, 199);
-//     border-radius: 15px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     background-color: white;
-// }
-
-// .card-bv .card-img{
-//     width: 100%;
-//     border-radius: 14px 14px 0 0;
-// }
-
-// .card-bv div{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .card-bv em{
-//     text-decoration: line-through;
-//     color: #a0a0a0;
-// }
-
-// .card-bv h5{
-//     padding-top: 5px;
-//     font-size: 1.1em;
-// }
-// .card-bv h4{
-//     padding-bottom: 10px;
-//     font-weight: bold;
-// }
-
-// .sp-logo{
-//     width: 30px;
-//     height: 25px;
-// }
-// .card-bv p{
-//     padding-top: 16px;
-// }
-
-// proba card design
 
 .slider-header {
-    margin: 32px 10% 20px 10%;
+    padding: 32px 10% 0 10%;
     font-family: 'Montserrat',
         sans-serif;
     font-size: 35px;
@@ -771,42 +722,152 @@ li:nth-child(5) {
 
 .slider_container {
     display: block;
-    white-space: nowrap;
+    
 }
 
-.item {
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 10px;
+// .item {
+//     display: inline-block;
+//     margin-top: 10px;
+//     margin-bottom: 15px;
+//     margin-left: 10px;
+// }
+
+// .item img {
+//     width: 220px;
+//     transition: 0.4s ease-in-out;
+// }
+
+// .item img:hover {
+//     transform: scale(1.1);
+//     transition: 0.4s ease-in-out;
+// }
+
+// @media only screen and (max-width:900px) {
+//     .slider-header {
+//         text-align: center;
+//     }
+
+//     .item img {
+//         width: 200px;
+//         padding-bottom: 0px;
+//     }
+// }
+
+#first-card{
+    margin-left: 20px;
 }
 
-.item img {
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container a{
+    color: rgb(55, 55, 55);
+}
+.card-container a:hover{
+    color: rgb(55, 55, 55);
+    text-decoration: none;
+}
+
+.card-bv{
+    position: relative;
+    margin: 30px 15px;
+    height: 285px;
     width: 220px;
-    transition: 0.4s ease-in-out;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    transition: all 300ms ease-in;
 }
 
-.item img:hover {
+.card-bv:hover{
     transform: scale(1.1);
-    transition: 0.4s ease-in-out;
+    transition: all 300ms ease-in;
 }
 
-@media only screen and (max-width:900px) {
-    .slider-header {
-        text-align: center;
-    }
-
-    .item img {
-        width: 200px;
-        padding-bottom: 0px;
-    }
+.card-bv .card-img{
+    height: 165px;
+    overflow: hidden;
+    border-radius: 13px 13px 0px 0px;
+    padding-bottom: 10px;
 }
+
+.card-bv em{
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.card-bv h5{
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+
+.card-bv h4{
+    font-weight: 600;
+    background-color: #f8f8f8;
+    padding:10px 0;
+    border-radius: 0 0 16px 16px;
+    margin: 0;
+}
+
+.sp-logo{
+    width: 30px;
+    height: 25px;
+}
+
+.card-bv p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 5px 0; 
+}
+
+.card-bv:hover h4{
+    color: rgb(15, 177, 61);
+}
+
+.card-bv hr{
+    color: #a0a0a0;
+    margin: 0;
+    width: 85%;
+    padding-bottom: 5px;
+}
+
+.card-bv a{
+    text-decoration: none;
+}
+.card-bv a:hover{
+    text-decoration: none;
+}
+
+.card-bv .popust{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: 0.8em;
+    border-radius: 8px;
+    position: absolute;
+    padding: 2px 10px;
+    margin-top: -13px;
+    margin-left: 100px;
+    width: fit-content;
+}
+
+.card-bv .popust p{
+    margin: 0;
+}
+
+
+
 
 /* Footer and Social media */
 
 .footer-bg {
     background: linear-gradient(to left, rgb(218, 218, 218), rgb(152, 152, 152));
-    padding: 50px 10% 50px 10%;
+    padding: 0 10% 50px 10%;
     border-radius: 15px 15px 0px 0px;
 }
 
