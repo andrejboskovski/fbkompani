@@ -628,6 +628,7 @@ li:nth-child(5) {
 
 .coll {
     display: flex;
+    flex-direction: row;
     background: linear-gradient(to right, rgb(218, 218, 218), rgb(152, 152, 152));
     padding: 50px 10% 50px 10%;
     border-radius: 0 0 15px 15px;
@@ -674,6 +675,7 @@ li:nth-child(5) {
 @media only screen and (max-width: 900px) {
 
     .coll {
+        flex-direction: column-reverse;
         margin: 0;
         text-align: center;
         padding: 30px 30px;
@@ -769,6 +771,11 @@ li:nth-child(5) {
     color: #a0a0a0;
 }
 
+.card-bv hr{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card-bv h5{
     font-size: 0.9em;
     padding: 0 5px;
@@ -803,8 +810,8 @@ li:nth-child(5) {
 
 .card-bv hr{
     color: #a0a0a0;
-    margin: 0;
-    width: 85%;
+    margin: 0 auto;
+    width: 80%;
     padding-bottom: 5px;
 }
 
@@ -832,9 +839,9 @@ li:nth-child(5) {
     margin: 0;
 }
 
-.sp-icon{
+.sp-sp-logo{
     font-size: 1.2em;
-    padding-left: 3px;
+    margin-left: 2.5px;
 }
 
 #scb{
@@ -848,120 +855,70 @@ li:nth-child(5) {
 
 /* Footer and Social media */
 
-.footer-bg {
-    background: linear-gradient(to left, rgb(218, 218, 218), rgb(152, 152, 152));
-    padding: 0 10% 50px 10%;
-    border-radius: 15px 15px 0px 0px;
+footer{
+   background-color: rgb(23, 23, 23);
+   padding: 50px 10% 3px;
+   border-radius: 100px 0 0 0;
+   
 }
 
-.row-footer {
-    padding: 50px 15%;
+.footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media only screen and (max-width: 900px) {
-    .row-footer {
-        flex-wrap: wrap;
+.footer-row{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: white;
+}
+
+.footer-row img{
+    width: 100px;
+    padding-bottom: 10px;
+}
+.footer-row a{
+    color: rgb(179, 179, 179);
+}
+
+.footer-row a:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: center;
+    color: white;   
+}
+
+footer hr{
+    background-color: rgb(150, 150, 150);
+    margin-top: 40px;
+}
+
+@media only screen and(max-width:900px){
+    .footer{
         flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-    .col1,
-    .col2,
-    .col3,
-    .col4 {
-        padding-top: 20px;
-        align-items: center;
         text-align: center;
     }
-}
 
-.row-footer h5 {
-    padding-bottom: 8px;
-    font-weight: 600;
-    font-size: 17px;
-    color: rgb(51, 51, 51);
-}
-
-
-.row-footer h6 {
-    font-weight: 400;
-    font-size: 15px;
-    color: rgb(82, 82, 82);
-}
-
-.social {
-    margin-right: 15px;
-    font-size: 20px;
-    color: rgb(82, 82, 82);
-
-}
-
-@media only screen and (max-width:900px) {
-
-    .social-all {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+    .footer h4{
+        margin-top: 20px;
     }
 
-    .social {
-        padding-left: 15px;
-    }
-}
-
-
-
-.footer-links {
-    font-weight: 400;
-    font-size: 15px;
-    color: rgb(82, 82, 82);
-}
-
-.footer-links:hover {
-    color: rgb(0, 0, 0);
-}
-
-@media only screen and (min-width:900px) {
-    .fa-instagram {
-        padding-left: 0.5px;
+    .footer-row{
+        width: 80%;
     }
 
-    .fa-facebook-f {
-        padding-left: 3.2px;
+    .footer-row img{
+        margin-left: auto;
+        margin-right: auto;
     }
-
 }
-
-/* footer */
-
-hr {
-    margin: 0px 50px 0 50px;
-    border-top: 0.5px solid grey;
-}
-
-.margintop {
-    margin-top: 20px;
-}
-
-footer {
-    margin: 0;
-    padding: 20px;
-    font-family: 'Montserrat',
-        sans-serif;
-    font-size: 15px;
-}
-
-
-.phone-link {
-    color: #333333;
-}
-
 
 
 
@@ -1050,10 +1007,18 @@ form {
 
 /* ZA NAS PAGE--------------------------------------------------------- */
 
-.coll-za-nas {
-    display: flex;
-    padding: 30px 12%;
-    margin-bottom: 50px;
+
+.za-nas{
+    padding: 50px;
+}
+
+.za-nas p{
+    font-size: 1.2em;
+}
+
+.za-nas img{
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1115,7 +1080,6 @@ form {
 }
 
 
-
 /* myWorld ************************************************************************* */
 
 .containerMy {
@@ -1152,9 +1116,6 @@ form {
         margin-left: 10px;
     }
 }
-
-
-
 
 
 
