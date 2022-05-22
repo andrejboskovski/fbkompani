@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'sp';
-  src:  url('fonts/sp.eot?77sb37');
-  src:  url('fonts/sp.eot?77sb37#iefix') format('embedded-opentype'),
-    url('fonts/sp.ttf?77sb37') format('truetype'),
-    url('fonts/sp.woff?77sb37') format('woff'),
-    url('fonts/sp.svg?77sb37#sp') format('svg');
+  src:  url('./fonts/sp.eot?e3ktp');
+  src:  url('./fonts/sp.eot?e3ktp#iefix') format('embedded-opentype'),
+    url('./fonts/sp.ttf?e3ktp') format('truetype'),
+    url('./fonts/sp.woff?e3ktp') format('woff'),
+    url('./fonts/sp.svg?e3ktp#sp') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sp-icon:before {
+.sp-sp-logo:before {
   content: "\e900";
 }
